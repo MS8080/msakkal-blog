@@ -94,15 +94,9 @@
             <div class="post-content">
                 <h2>The Problem</h2>
 
-                <p>Note apps are dumb containers. You write something, it sits there. If you want an AI to help you make sense of your health, you copy-paste your notes into ChatGPT and re-explain your entire history every time. The AI has amnesia. Your notes have no intelligence. You're the glue holding it together — and if you're neurodivergent, being the glue is exactly the thing you can't do.</p>
+                <p>Note apps are containers. You write something, it sits there. If you want AI to help you understand your health, you copy-paste your notes into a chatbot and explain your whole history from scratch every time. The chatbot forgets everything between sessions. Your notes don't connect to anything. You're the one holding it all together.</p>
 
-                <p>I know this because I've lived it for a decade.</p>
-
-                <h2>My Situation</h2>
-
-                <p>I have ASD, ADHD, and recurrent depression. I've been in psychiatric treatment since 2015 — over 20 medication changes, years of psychotherapy, multiple medication combinations. I also manage a complex eye condition — blind in my left eye since childhood, 11 surgeries. Each condition interacts with the others. Medications for ADHD cause side effects that affect my eye. Supplements for cognitive function cause acid reflux. The depression fluctuates with every environmental change.</p>
-
-                <p>No app existed that could hold all of this in one place and actually help me make sense of it. Health trackers want me to tap buttons and rate my mood 1-5. Journaling apps store text and do nothing with it. AI chatbots forget everything between sessions.</p>
+                <p>I know this because I've been trying to track my own health for years — multiple things interacting with each other, medications, routines, environments, all shifting at the same time. No existing app could hold that complexity. Health trackers wanted me to tap buttons and rate my mood 1 to 5. Journaling apps stored text and did nothing with it.</p>
 
                 <p>So I built the tool I needed.</p>
 
@@ -110,33 +104,17 @@
 
                 <p>You write or speak freely — no forms, no ratings, no structured input. Just say what happened, how you feel, what you noticed.</p>
 
-                <p>Cortex does the rest:</p>
+                <p>Cortex handles the rest. It organizes your entries, finds patterns over time, and gives you an AI assistant that actually knows your full history. You don't have to re-explain yourself. You don't have to remember what you wrote three months ago. The app remembers, and the AI works with your real words every time — no pre-baked conclusions.</p>
 
-                <ul>
-                    <li><strong>Classifies</strong> your entry — observation, strategy, venting, reflection, medication note, or event</li>
-                    <li><strong>Extracts</strong> factual entities — symptoms, medications, activities, emotions — without interpreting causality</li>
-                    <li><strong>Remembers</strong> everything through semantic search and keyword indexing</li>
-                    <li><strong>Retrieves</strong> relevant past entries when you talk to the AI assistant</li>
-                    <li><strong>Interprets fresh</strong> every time from your actual words — no pre-baked conclusions, no feedback loops</li>
-                </ul>
+                <h2>Why It's Built This Way</h2>
 
-                <p>The AI assistant, Mimo, feels like talking to someone who has read every journal entry you've ever written. Because it has.</p>
+                <p>Most health tools assume you have the energy to log consistently, the memory to track your own patterns, and the bandwidth to review data about yourself. A lot of people don't — especially when the reason they need the tool is the same reason using it is hard.</p>
 
-                <h2>Why It Matters for Neurodivergent People</h2>
-
-                <p>Most health tools are built with a neurotypical assumption: that users have the executive function to log consistently, the working memory to remember their own patterns, and the emotional bandwidth to review clinical data about themselves.</p>
-
-                <p>Neurodivergent people — especially those managing ADHD, autism, and depression simultaneously — often don't. The tracking tool itself becomes another demand on a system that's already overloaded.</p>
-
-                <p>Cortex is designed around this reality. Minimal friction. Voice input when typing is too much. No judgment about what you write. An AI that does the organizing so you don't have to. Write freely. The app handles the rest.</p>
+                <p>Cortex is designed around that reality. Minimal friction. Voice input when typing feels like too much. No judgment about what you write. An AI that does the organizing so you don't have to.</p>
 
                 <h2>How I Built It</h2>
 
-                <p>I built Cortex alone. No team, no funding, no startup. Over 700 commits across a full architectural evolution — including a 126-commit learning experience where I built a knowledge graph, discovered it was the wrong approach (it created feedback loops that manufactured false certainty), and replaced it with the right architecture: retrieval over raw text.</p>
-
-                <p>The tech stack: SwiftUI, CoreData with 50+ entities, AWS Bedrock (Claude AI), on-device semantic embeddings, sqlite-vec for vector storage, Whisper for voice transcription, hybrid retrieval with reciprocal rank fusion.</p>
-
-                <p>I'm not listing these details to impress anyone. I'm listing them because they represent what one person can build when the problem is personal enough.</p>
+                <p>I built Cortex alone — no team, no funding. It's a full iOS application with voice input, AI-powered analysis, semantic search, and a chat assistant. Along the way I made significant architectural mistakes, learned from them, and rebuilt the right way. That process taught me more than any course could.</p>
 
                 <h2>What's Next</h2>
 
