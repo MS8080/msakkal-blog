@@ -12,17 +12,9 @@ The user has firsthand experience building with AI (Cortex) and strong opinions 
 
 ### 1. Navigation
 
-Add a "Research" link to the homepage header nav, alongside the existing Cortex and LinkedIn links.
+Add a "Research" link to the header nav across all pages.
 
-**Homepage header nav (current):**
-```html
-<nav>
-    <a href="https://ms-dev.app" target="_blank">Cortex</a>
-    <a href="https://linkedin.com/in/MS443" target="_blank">LinkedIn</a>
-</nav>
-```
-
-**Homepage header nav (new):**
+**Homepage nav (new):**
 ```html
 <nav>
     <a href="/research/">Research</a>
@@ -31,7 +23,19 @@ Add a "Research" link to the homepage header nav, alongside the existing Cortex 
 </nav>
 ```
 
-The same nav link should appear in the header of all post pages and research article pages.
+**Post pages and research article pages nav (new):**
+
+Existing post pages already have a "Blog" link pointing to `/`. Preserve that and add "Research":
+```html
+<nav>
+    <a href="/">Blog</a>
+    <a href="/research/">Research</a>
+    <a href="https://ms-dev.app" target="_blank">Cortex</a>
+    <a href="https://linkedin.com/in/MS443" target="_blank">LinkedIn</a>
+</nav>
+```
+
+This nav applies to all post pages and all research article pages.
 
 ### 2. Research Listing Page — `/research/index.html`
 
@@ -44,7 +48,7 @@ A new page that lists all research articles. Structure mirrors the homepage but 
 - No tags on research articles
 - Footer: same as homepage
 
-**Styles:** Reuse all existing CSS from homepage. No new styles needed. The inline CSS is duplicated per page (consistent with current approach — no shared stylesheet).
+**Styles:** Reuse homepage CSS as the base. Omit `.post-tag` / `--tag-bg` styles (no tags on research articles). Inline CSS per page (consistent with current approach — no shared stylesheet).
 
 ### 3. Research Article Template — `/research/{slug}.html`
 
@@ -53,20 +57,26 @@ Individual article pages. Structure mirrors existing post pages (e.g., `/posts/w
 **Layout:**
 - Header: same as other pages
 - Post header: title (Lora, 32px) + date (Inter, 13px uppercase)
-- Post content: paragraphs, h2 subheadings, blockquotes, links
+- Post content: paragraphs, h2 subheadings, blockquotes, links, images
 - Back link: "&larr; Back to Research" pointing to `/research/`
 - Footer: same as other pages
 
-**Nav in header:**
-```html
-<nav>
-    <a href="/research/">Research</a>
-    <a href="https://ms-dev.app" target="_blank">Cortex</a>
-    <a href="https://linkedin.com/in/MS443" target="_blank">LinkedIn</a>
-</nav>
-```
+**Nav in header:** Same as post pages (Blog, Research, Cortex, LinkedIn).
 
 **Meta tags:** Full Open Graph and Twitter card meta tags for each article, same pattern as existing posts.
+
+**Additional CSS for article pages** (not in the base post template but needed):
+```css
+.post-content blockquote {
+    border-left: 3px solid var(--border); padding-left: 20px; margin: 24px 0;
+    font-style: italic; color: var(--text-secondary);
+}
+.post-content img {
+    max-width: 100%; height: auto; border-radius: 4px; margin: 24px 0;
+}
+```
+
+**Images:** If an article includes screenshots, store them in `/research/images/`. Use descriptive alt text on all `<img>` tags.
 
 ### 4. First Article — "Putting AI Everywhere Does Not Mean Success"
 
@@ -82,11 +92,14 @@ Individual article pages. Structure mirrors existing post pages (e.g., `/posts/w
 
 ```
 msakkal-blog/
-  index.html              (modified — add Research nav link)
+  index.html                    (modified — add Research nav link)
   posts/
-    why-cortex-exists.html (modified — add Research nav link)
+    why-cortex-exists.html      (modified — add Research nav link)
+    the-contradiction.html      (modified — add Research nav link)
+    different.html              (modified — add Research nav link)
+    my-story.html               (modified — add Research nav link)
   research/
-    index.html             (new — research listing page)
+    index.html                  (new — research listing page)
     ai-everywhere-not-success.html (new — first article)
 ```
 
