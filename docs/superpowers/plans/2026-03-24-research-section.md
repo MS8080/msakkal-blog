@@ -25,7 +25,7 @@ mkdir -p research
 
 - [ ] **Step 2: Create `research/index.html`**
 
-This page mirrors the homepage layout but only shows research articles. Uses homepage CSS minus `.post-tag`/`--tag-bg`/`.intro` styles. Includes the homepage nav (Research, Cortex, LinkedIn — no "Blog" link since this is a top-level section like homepage).
+This page mirrors the homepage layout but only shows research articles. Uses homepage CSS minus `.post-tag`/`--tag-bg`/`.intro` styles. Nav links to the other top-level section (Blog, Cortex, LinkedIn — no self-referencing "Research" link, matching how the homepage doesn't self-link either).
 
 ```html
 <!DOCTYPE html>
@@ -198,7 +198,6 @@ This page mirrors the homepage layout but only shows research articles. Uses hom
             <p>Developer. Builder of Cortex.</p>
             <nav>
                 <a href="/">Blog</a>
-                <a href="/research/">Research</a>
                 <a href="https://ms-dev.app" target="_blank">Cortex</a>
                 <a href="https://linkedin.com/in/MS443" target="_blank">LinkedIn</a>
             </nav>
@@ -229,7 +228,7 @@ This page mirrors the homepage layout but only shows research articles. Uses hom
 
 Open `research/index.html` in a browser. Confirm:
 - Header matches homepage (name, tagline, nav)
-- Nav shows Blog, Research, Cortex, LinkedIn
+- Nav shows Blog, Cortex, LinkedIn (no self-referencing Research link)
 - "Research" section title appears
 - Footer matches homepage
 - Responsive at 480px breakpoint
