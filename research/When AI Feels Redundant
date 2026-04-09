@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>When AI Feels Redundant..| Mohamad Sakkal</title>
+    <title>When AI Feels Redundant | Mohamad Sakkal</title>
+    <link rel="canonical" href="https://msakkal.com/research/ai-everywhere-not-success.html">
     <meta name="description" content="Adding AI to a product doesn't automatically make it better. Many implementations add complexity and confusion without solving the actual problem.">
     <meta property="og:title" content="Putting AI Everywhere Does Not Mean Success">
     <meta property="og:description" content="Adding AI to a product doesn't automatically make it better. Many implementations add complexity and confusion without solving the actual problem.">
+    <meta property="og:image" content="https://msakkal.com/favicon.png">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://msakkal.com/research/ai-everywhere-not-success.html">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Putting AI Everywhere Does Not Mean Success">
     <meta name="twitter:description" content="Adding AI to a product doesn't automatically make it better. Many implementations add complexity and confusion without solving the actual problem.">
+    <meta name="twitter:image" content="https://msakkal.com/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
