@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications &mdash; Mohamad Sakkal</title>
+    <title>Experience &mdash; Mohamad Sakkal</title>
     <link rel="canonical" href="https://msakkal.com/certifications/">
-    <meta name="description" content="Formal coursework and certifications by Mohamad Sakkal in AI, software development, and IT infrastructure.">
-    <meta property="og:title" content="Certifications &mdash; Mohamad Sakkal">
-    <meta property="og:description" content="Formal coursework and certifications in AI, software development, and IT infrastructure.">
+    <meta name="description" content="Experience and certifications by Mohamad Sakkal — building Cortex and Scriptum, plus formal coursework in AI, software, and IT.">
+    <meta property="og:title" content="Experience &mdash; Mohamad Sakkal">
+    <meta property="og:description" content="Experience and certifications — building Cortex and Scriptum, plus formal coursework in AI, software, and IT.">
     <meta property="og:image" content="https://msakkal.com/favicon.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://msakkal.com/certifications/">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Certifications &mdash; Mohamad Sakkal">
-    <meta name="twitter:description" content="Formal coursework and certifications in AI, software development, and IT infrastructure.">
+    <meta name="twitter:title" content="Experience &mdash; Mohamad Sakkal">
+    <meta name="twitter:description" content="Experience and certifications — building Cortex and Scriptum, plus formal coursework in AI, software, and IT.">
     <meta name="twitter:image" content="https://msakkal.com/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,6 +145,51 @@
             margin-top: 4px;
         }
 
+        .timeline {
+            list-style: none;
+        }
+
+        .timeline-item {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .timeline-period {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .timeline-role {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .timeline-detail {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            font-family: 'Lora', Georgia, serif;
+            font-size: 16px;
+        }
+
         footer {
             padding: 48px 0;
             margin-top: 48px;
@@ -183,19 +228,48 @@
                 <a href="/research/">Articles</a>
                 <a href="https://ms-dev.app" target="_blank">Cortex</a>
                 <a href="https://ms-dev.app/scriptum/" target="_blank">Scriptum</a>
-                <a href="/#experience">Experience</a>
+                <a href="/certifications/">Experience</a>
                 <a href="https://linkedin.com/in/MS443" target="_blank">LinkedIn</a>
             </nav>
         </header>
 
         <main>
             <section class="intro">
-                <h2>Certifications</h2>
-                <p>Formal coursework and certifications in AI, software development, and IT infrastructure.</p>
+                <h2>Experience</h2>
+                <p>What I've built, what I've learned, and the formal coursework behind it.</p>
             </section>
 
             <section class="cert-group">
-                <h3 class="section-title">AI &amp; Machine Learning</h3>
+                <h3 class="section-title">Work</h3>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-period">2025 &ndash; Present &middot; 6+ months</div>
+                        <div class="timeline-role">Building Cortex &middot; Solo founder &amp; developer</div>
+                        <div class="timeline-detail">Native iOS app (Swift, SwiftUI, CoreData) for AI-powered health journaling. Built voice input, semantic search across entry history, NLP for unstructured writing, and a conversational assistant with full long-context memory. AWS Bedrock for the model layer.</div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-period">2025 &ndash; Present</div>
+                        <div class="timeline-role">Building Scriptum &middot; Solo founder &amp; developer</div>
+                        <div class="timeline-detail">Native macOS Markdown editor with live preview, math rendering, Mermaid diagrams, presentations, and PDF export. No Electron, no subscriptions.</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="cert-group">
+                <h3 class="section-title">What I've Worked On</h3>
+                <ul class="skill-list">
+                    <li>Product design and app architecture</li>
+                    <li>Native iOS and macOS development (Swift, SwiftUI, CoreData)</li>
+                    <li>Interface and interaction design</li>
+                    <li>AI and retrieval: RAG pipelines, embeddings, vector search, knowledge graphs, long-context conversational systems</li>
+                    <li>Project management: scoping, planning, and shipping solo across long timelines</li>
+                    <li>Websites and landing pages (msakkal.com, ms-dev.app)</li>
+                    <li>App distribution: code signing, notarization, App Store submission, releases</li>
+                </ul>
+            </section>
+
+            <section class="cert-group">
+                <h3 class="section-title">Certifications &middot; AI &amp; Machine Learning</h3>
                 <ul class="cert-list">
                     <li class="cert-item">
                         <div class="cert-title">Building with the Claude API</div>
@@ -225,7 +299,7 @@
             </section>
 
             <section class="cert-group">
-                <h3 class="section-title">Software &amp; Data</h3>
+                <h3 class="section-title">Certifications &middot; Software &amp; Data</h3>
                 <ul class="cert-list">
                     <li class="cert-item">
                         <div class="cert-title">Python for Data Science</div>
@@ -243,7 +317,7 @@
             </section>
 
             <section class="cert-group">
-                <h3 class="section-title">IT &amp; Networking</h3>
+                <h3 class="section-title">Certifications &middot; IT &amp; Networking</h3>
                 <ul class="cert-list">
                     <li class="cert-item">
                         <div class="cert-title">Google IT Support</div>
@@ -263,7 +337,7 @@
                 <a href="https://linkedin.com/in/MS443" target="_blank">LinkedIn</a>
                 <a href="https://ms-dev.app" target="_blank">Cortex</a>
                 <a href="https://ms-dev.app/scriptum/" target="_blank">Scriptum</a>
-                <a href="/#experience">Experience</a>
+                <a href="/certifications/">Experience</a>
             </div>
             <p>&copy; 2026 Mohamad Sakkal. Vienna, Austria.</p>
         </footer>
